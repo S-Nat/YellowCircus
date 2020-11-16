@@ -21,8 +21,7 @@ class Example(QWidget):
         if self.flag:
             qp = QPainter()
             qp.begin(self)
-            qp.setPen(QColor(255, 255, 0))
-            qp.setBrush(QColor(255, 255, 0))
+            qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
             x1 = randint(0, 780)
             y1 = randint(0, 500)
             self.x, self.y = x1, y1
